@@ -6,7 +6,7 @@ Recommended installation method for all Operating Systems
 
 From a command line (preferably, from a virtual environment), simply issue the command:
 
-pip install coursera-dl
+    pip install coursera-dl
 
 ##  Coursera-dl bug 
 ### HTTPError: 400 Client Error: Bad Request for url: https://api.coursera.org/api/login/v3
