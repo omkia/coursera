@@ -7,7 +7,9 @@ Recommended installation method for all Operating Systems
 From a command line (preferably, from a virtual environment), simply issue the command:
 
     pip install coursera-dl
-
+## cant access coursera ?
+use shekan DNS
+https://shecan.ir/?url=https%3A%2F%2Fcoursera.org#report
 ##  Coursera-dl bug 
 ### HTTPError: 400 Client Error: Bad Request for url: https://api.coursera.org/api/login/v3
 #### first way
