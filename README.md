@@ -11,7 +11,7 @@ From a command line (preferably, from a virtual environment), simply issue the c
 ##  Coursera-dl bug 
 ### HTTPError: 400 Client Error: Bad Request for url: https://api.coursera.org/api/login/v3
 #### first way
-login to
+For anyone looking for help I want to point out that after logging in with (https://learner.coursera.help/hc/en-us), you must wait for a few minute than just keep trying. By keep trying I mean spamming your command over and over again and it will somehow work (at least it works for me, I need to retry the command about 10 times before it will work).
 
 Login to Coursera once through the browser.   https://www.coursera.org/?authMode=login
 
@@ -24,7 +24,7 @@ def login(session, username, password, class_name=None):
 
 Please google how to inspect cookie values for your browser. You may get some clues here.  https://kb.iu.edu/d/ajfi
 
-    Run coursera-dl as per usual.
+Run coursera-dl as per usual.
 
 Do note that cookies expire, though it's quite long in this particular cookie's case. In case it does, do login through the browser again to get a new cookie.
 
