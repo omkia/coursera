@@ -30,10 +30,13 @@ Place the file namely ‘coursera-dl.conf’ in the directory where to use cours
 
 The example of the format is below.
 
--- username <your email>
--- password <your pass>
--- subtitle-language en
---cauth <your cauth using below plugins>
+	-- username "your email"
+	
+	-- password "your pass"
+	
+	-- subtitle-language en
+
+	--cauth "your cauth using below plugins"
 
 Execute a command and trouble shooting.
 
