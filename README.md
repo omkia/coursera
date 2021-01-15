@@ -2,7 +2,14 @@
 Dowload all videos and content in an organized way from coursera
 ## Download and Install Coursera-dl
 
+This article is just a memo for me that remind me of how to download Coursera contents, such as videos and scripts, to my own computer using coursera-dl.
+Setup coursera-dl.
+
 Recommended installation method for all Operating Systems
+
+cousera-dl is a python tool. (https://github.com/coursera-dl/coursera-dl)
+
+Python environment is required, but even windows is OK for using this tool.
 
 From a command line (preferably, from a virtual environment), simply issue the command:
 
@@ -17,39 +24,44 @@ For anyone looking for help I want to point out that after logging in with (http
 
 Login to Coursera once through the browser.   https://www.coursera.org/?authMode=login
 
-Find your installed coursera-dl site package (how?).   https://stackoverflow.com/questions/122327/how-do-i-find-the-location-of-my-python-site-packages-directory
+Create coursera-dl.conf file.
 
-Modify login function in cookie.py (where?) to the following:  https://github.com/coursera-dl/coursera-dl/blob/a82edb924e20268ea1d9e6d8914b71b56759cf2f/coursera/cookies.py#L111
+Place the file namely ‘coursera-dl.conf’ in the directory where to use coursera-dl command.
 
-def login(session, username, password, class_name=None):
-    session.cookies.set('CAUTH', '[YOUR CAUTH COOKIE VALUE]')
+The example of the format is below.
 
-Please google how to inspect cookie values for your browser. You may get some clues here.  https://kb.iu.edu/d/ajfi
+-- username <your email>
+-- password <your pass>
+-- subtitle-language en
+--cauth <your cauth using below plugins>
 
-Run coursera-dl as per usual.
+Execute a command and trouble shooting.
 
-Do note that cookies expire, though it's quite long in this particular cookie's case. In case it does, do login through the browser again to get a new cookie.
+Now, you can use coursera-dl.
 
-#### another way
-Have created a temporary fix branch for the changes needed at -
-https://github.com/jethar/coursera-dl/tree/fix_bad_request_api_v3
+coursera-dl <course name>
 
-Alternatively,, just replace your coursera_dl.py with this one    https://github.com/jethar/coursera-dl/blob/fix_bad_request_api_v3/coursera/coursera_dl.py
+You can get the course name in the url of the course you would like to get contents.
 
-This is temporary fix for Bad Request URL as mentioned here.
+For example, if you would like to get the contents in a course below,
 
-To use this download the cookies file as cookies.txt in the directory, where you want to download courses and then run the coursera-dl command as usual.
+https://www.coursera.org/learn/deep-learning-in-computer-vision
+
+you should type the command below.
+
+coursera-dl deep-learning-in-computer-vision
+
+And Importantly, please note that when you use coursera-dl command, coursera-dl might get error with “400 Bad request” at the coursera authentication process.
+
+To get avoid this, We need a pache mentioned in this comment and need a cookies.txt of coursera.
 
 The cookies can be downloaded using chrome extension
 https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid?hl=en
 or this firefox extension:
 https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/
 
-Caveats:
+That’s it. Thanks!
 
-Keep your command simple, adding some options, such as --download-quizzes --download-notebooks breaks things.
-
-My cookies file (which worked) has format like -
 
 ## Running the script
 
