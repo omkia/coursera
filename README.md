@@ -27,7 +27,7 @@ Take note of the CAUTH
 
 ![Alt text](img/3.png?raw=true )
 
-##Snippet
+## Snippet
 
 If you are downloading https://www.coursera.org/learn/[CLASS-NAME]/home/info
  
