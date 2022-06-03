@@ -1,3 +1,30 @@
+# Download whole course or courses contents from coursera
+
+first install this package in python
+
+```
+pip install coursera-dl
+```
+
+If you are downloading https://www.coursera.org/learn/[CLASS-NAME]/home/info
+ 
+For example class home: https://www.coursera.org/learn/cloud-infrastructure-design-process/home/info
+
+[CLASS-NAME] : cloud-infrastructure-design-process
+
+## Obtain CAUTH token for the course
+
+Navigate to the class home
+
+Right click > select Inspect
+
+```
+# General command
+coursera-dl -ca 'CAUTH' [CLASS-NAME]
+
+# Example
+coursera-dl -ca 't7OlopZp-vgTjHpFalsljlskfdlfakf' cloud-infrastructure-design-process
+```
 # cant access coursera ?
 use shekan DNS
 https://shecan.ir/?url=https%3A%2F%2Fcoursera.org#report
