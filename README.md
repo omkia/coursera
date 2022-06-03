@@ -1,22 +1,39 @@
 # Download whole course or courses contents from coursera
 
+## Install coursera-dl
 first install this package in python
 
 ```
 pip install coursera-dl
 ```
 
-If you are downloading https://www.coursera.org/learn/[CLASS-NAME]/home/info
- 
-For example class home: https://www.coursera.org/learn/cloud-infrastructure-design-process/home/info
+ref: https://github.com/coursera-dl/coursera-dl
 
-[CLASS-NAME] : cloud-infrastructure-design-process
+
 
 ## Obtain CAUTH token for the course
 
 Navigate to the class home
 
 Right click > select Inspect
+
+![Alt text](img/1.png?raw=true )
+
+Select Application
+
+![Alt text](img/2.png?raw=true )
+
+Take note of the CAUTH
+
+![Alt text](img/3.png?raw=true )
+
+##Snippet
+
+If you are downloading https://www.coursera.org/learn/[CLASS-NAME]/home/info
+ 
+For example class home: https://www.coursera.org/learn/cloud-infrastructure-design-process/home/info
+
+[CLASS-NAME] : cloud-infrastructure-design-process
 
 ```
 # General command
